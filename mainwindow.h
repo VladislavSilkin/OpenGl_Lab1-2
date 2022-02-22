@@ -16,9 +16,6 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_comboBox_lab_1_activated(int index);
-
-    void on_comboBox_lab_1_currentTextChanged(const QString &arg1);
 
 private:
     Ui::MainWindow *ui;

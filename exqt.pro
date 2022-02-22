@@ -8,10 +8,12 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    glscene.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    glscene.h \
     mainwindow.h
 
 FORMS += \
@@ -21,6 +23,8 @@ TRANSLATIONS += \
     exqt_ru_RU.ts
 CONFIG += lrelease
 CONFIG += embed_translations
+
+LIBS += -lglu32 -lopengl32
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

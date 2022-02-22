@@ -185,7 +185,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QOpenGLWidget" name="openGL_main">
+   <widget class="glScene" name="openGL_main">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -208,6 +208,30 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>glScene</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">glscene.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>comboBox_lab_1</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>openGL_main</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>606</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>250</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

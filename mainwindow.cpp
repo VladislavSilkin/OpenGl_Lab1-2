@@ -13,9 +13,3 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-void MainWindow::on_comboBox_lab_1_currentTextChanged(const QString &arg1)
-{
-    ui->openGL_main->
-}
-
