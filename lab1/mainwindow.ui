@@ -37,7 +37,7 @@
         <widget class="QComboBox" name="comboBox_lab_1">
          <item>
           <property name="text">
-           <string>GL_POINT</string>
+           <string>GL_TRIANGLES</string>
           </property>
          </item>
          <item>
@@ -52,7 +52,7 @@
          </item>
          <item>
           <property name="text">
-           <string>GL_LINE_LOOP</string>
+           <string>GL_TRIANGLE_STRIP</string>
           </property>
          </item>
         </widget>
@@ -218,18 +218,18 @@
  <resources/>
  <connections>
   <connection>
-   <sender>comboBox_lab_1</sender>
-   <signal>currentTextChanged(QString)</signal>
-   <receiver>openGL_main</receiver>
-   <slot>update()</slot>
+   <sender>pushButton</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>606</x>
-     <y>74</y>
+     <x>758</x>
+     <y>587</y>
     </hint>
     <hint type="destinationlabel">
-     <x>250</x>
-     <y>316</y>
+     <x>399</x>
+     <y>312</y>
     </hint>
    </hints>
   </connection>
