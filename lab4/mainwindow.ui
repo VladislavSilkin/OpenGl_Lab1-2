@@ -6,42 +6,98 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>523</width>
-    <height>541</height>
+    <width>1139</width>
+    <height>1000</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Лабораторная 4</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="glscene" name="main_wndw">
+   <widget class="glScene" name="openGL_main">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>-10</y>
-      <width>500</width>
-      <height>500</height>
+      <y>10</y>
+      <width>900</width>
+      <height>1000</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>360</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="next">
+       <property name="text">
+        <string>Вперед</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>360</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="previuos">
+       <property name="text">
+        <string>Назад</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="level">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>330</y>
+      <width>91</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Уровень:</string>
     </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
+  <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>523</width>
-     <height>21</height>
+     <width>1139</width>
+     <height>22</height>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>glscene</class>
+   <class>glScene</class>
    <extends>QOpenGLWidget</extends>
-   <header>glscene.h</header>
+   <header location="global">glscene.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

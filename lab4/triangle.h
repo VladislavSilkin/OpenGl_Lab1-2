@@ -10,6 +10,7 @@ class triangle
 public:
     std::pair<double,double> dots[4];
 
+    triangle();
     triangle(std::pair<double,double> first, std::pair<double,double> second);
     void rotate(double);
     void resize(double);

@@ -1,5 +1,9 @@
 #include "triangle.h"
 
+triangle::triangle(){
+
+}
+
 triangle::triangle(std::pair<double,double> dot1, std::pair<double,double> dot2)
 {
     this->dots[0] = dot1;
